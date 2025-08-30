@@ -10,6 +10,13 @@ import Categories from "./pages/Categories";
 import PostDetail from "./pages/PostDetail";
 import AdminLogin from "./pages/admin/AdminLogin";
 import AdminDashboard from "./pages/admin/AdminDashboard";
+import AdminPosts from "./pages/admin/AdminPosts";
+import AdminCategories from "./pages/admin/AdminCategories";
+import AdminComments from "./pages/admin/AdminComments";
+import AdminMedia from "./pages/admin/AdminMedia";
+import AdminUsers from "./pages/admin/AdminUsers";
+import AdminSEO from "./pages/admin/AdminSEO";
+import AdminSettings from "./pages/admin/AdminSettings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +36,13 @@ const App = () => (
             <Route path="/post/:slug" element={<PostDetail />} />
             <Route path="/admin" element={<AdminLogin />} />
             <Route path="/admin/dashboard" element={<AdminDashboard />} />
+            <Route path="/admin/posts" element={<AdminPosts />} />
+            <Route path="/admin/categories" element={<AdminCategories />} />
+            <Route path="/admin/comments" element={<AdminComments />} />
+            <Route path="/admin/media" element={<AdminMedia />} />
+            <Route path="/admin/users" element={<AdminUsers />} />
+            <Route path="/admin/seo" element={<AdminSEO />} />
+            <Route path="/admin/settings" element={<AdminSettings />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
